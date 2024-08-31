@@ -44,7 +44,9 @@
 * Solid Border is used to make the colour common for all the edges
 * Adding Height and Width for the box is not a good choice , To get inside space use **padding**
 * By default our web browser try to align our button based on text . So to get aware from this , use vertical-align : top;
+
 ![alt text](image-2.png)
+
 ```html
 <style>
     .subscribe-button{
