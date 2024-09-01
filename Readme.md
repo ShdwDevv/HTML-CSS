@@ -1671,3 +1671,180 @@ p{
     </div>
 </div>
 ```
+## Grid
+* A Grid is a layout that has a rows and columns
+* It makes the alignment much better
+* In normal alignment it will take extra space for the new line div(1 space) so playing with width is a difficult task
+* fr = free space
+* 1fr according to  the window size it will take the remaining space(we are gonnna use in final project)
+* grid-template-column is the best for **horizontal layout**
+* This is the replacement of inline-block, vertical-position , margin-right-left
+* To align items vertically we use - align-items: center;
+### Exercise
+![alt text](image-24.png)
+* 11a
+```html
+<div class="container" style="
+    display:grid;grid-template-columns:200px 75px;
+">
+    <div style="background-color:lightblue">200px</div>
+    <div style="background-color:lightpink">75px</div>
+</div>
+```
+* 11b
+```html
+<div class="container" style="
+    display:grid;grid-template-columns:50px 1fr 75px;
+">
+    <div style="background-color:lightblue">col1</div>
+    <div style="background-color:lightpink">col2</div>
+    <div style="background-color:lightblue">col3</div>
+</div>
+```
+* 11c
+```html
+<div class="container" style="
+    display:grid;grid-template-columns:1fr 1fr 1fr 1fr;
+    row-gap:10px;
+    column-gap:20px;
+">
+    <div style="background-color:lightpink">col1</div>
+    <div style="background-color:lightpink">col2</div>
+    <div style="background-color:lightpink">col3</div>
+    <div style="background-color:lightpink">col4</div>
+    <div style="background-color:lightpink">col1</div>
+    <div style="background-color:lightpink">col2</div>
+    <div style="background-color:lightpink">col3</div>
+    <div style="background-color:lightpink">col4</div>
+</div>
+```
+![alt text](image-25.png)
+* 11d
+```html
+<style>
+    p{
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .box{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        column-gap: 15px;
+    }
+    .horizontal-outer{
+        width: 150px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    }
+    .cat-image{
+        width: 100%;
+        height: 100.8px;
+    }
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .user-name,button{
+        margin-left: 8px;
+    }
+    .mutual{
+        font-size: 12px;
+        color:#606060;
+    }
+    .vertical2{
+        width: 150px;
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        column-gap: 5px;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 8px;
+        vertical-align: middle;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding:5px 15px;
+        border: none;
+        color:#fff;
+        background-color: rgb(17, 110, 250);
+        border-radius: 2px;
+        font-size: 10px;
+    }
+</style>
+<div class="box">
+    <div class="horizontal-outer">
+        <div class="vertical">
+            <img src="./cat.jpg" class="cat-image" alt="cat-img">
+        </div>
+        <div class="vertical1">
+            <p class="user-name">Oliver</p>
+        </div>
+        <div class="vertical2">
+            <div class="hori1">
+                <img class="icon" src="./dog2.jpg" alt="dog2">
+            </div>
+            <div class="hori2">
+                <p class="mutual">2 mutual friends</p>
+            </div>
+        </div>
+        <div class="vertical3">
+            <button>Add Friend</button>
+        </div>
+    </div>
+    <div class="horizontal-outer">
+        <div class="vertical">
+            <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+        </div>
+        <div class="vertical1">
+            <p class="user-name">Mimi</p>
+        </div>
+        <div class="vertical2">
+            <div class="hori1">
+                <img class="icon" src="./dog2.jpg" alt="dog2">
+            </div>
+            <div class="hori2">
+                <p class="mutual">3 mutual friends</p>
+            </div>
+        </div>
+        <div class="vertical3">
+            <button>Add Friend</button>
+        </div>
+    </div>
+    <div class="horizontal-outer">
+        <div class="vertical">
+            <img src="./dog.jpg" class="cat-image" alt="cat-img">
+        </div>
+        <div class="vertical1">
+            <p class="user-name">Rex</p>
+        </div>
+        <div class="vertical2">
+            <div class="hori1">
+                <img class="icon" src="./dog2.jpg" alt="dog2">
+            </div>
+            <div class="hori2">
+                <p class="mutual">4 mutual friends</p>
+            </div>
+        </div>
+        <div class="vertical3">
+            <button>Add Friend</button>
+        </div>
+    </div>
+</div>
+```
+## Flexbox
+* Is is like grid , but it is more flexible
+* flex:1 - is like the 1fr
+* grid is rigid layout(width is based on the position)
+* flex is flexible layout (carrying the width)
+* When we use flexbox - In youtube top right we have 4 element but when we sign out there will be only  3 element os 1fr 1fr 1fr 1fr is an issue , So there flexbox is best (flexible)
+* justify-content : start(default) , place the element **horizontly**
+* align-items : stretch(default) , place the element **vertically**
