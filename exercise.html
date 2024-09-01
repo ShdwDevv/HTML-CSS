@@ -1,36 +1,114 @@
 <style>
-    div{
-        text-align: center;
+    p{
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
     }
-    .input-box{
-        font-size: 16px;
-        border:none;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-radius: 30px;
-        width: 500px;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-        margin-bottom: 20px;
-    }
-    .google{
-        width: 300px;
-        margin-bottom: 20px;
-    }
-    button{
-        padding:10px;
-        border:none;
+    .horizontal-outer{
+        width: 150px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        display: inline-block;
         margin-right: 10px;
     }
+    .cat-image{
+        width: 150px;
+        height: 100.8px;
+    }
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .user-name,button{
+        margin-left: 8px;
+    }
+    .mutual{
+        font-size: 12px;
+        color:#606060;
+    }
+    .vertical2{
+        width: 150px;
+    }
+    .hori1,.hori2{
+        display: inline-block;
+    }
+    
+    .icon{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 8px;
+        vertical-align: middle;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding:5px 15px;
+        border: none;
+        color:#fff;
+        background-color: rgb(17, 110, 250);
+        border-radius: 2px;
+        font-size: 10px;
+    }
 </style>
-<div>
-    <img src="./google.svg" alt="google" class="google">
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Oliver</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">2 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
 </div>
-<div>
-    <input type="text" class="input-box" placeholder="Search Google or type a URL">
+
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Mimi</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">3 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
 </div>
-<div>
-    <button class="search-button">Google Search</button>
-    <button class="lucky-button">I'm Feeling Lucky</button>
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./dog.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Rex</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">4 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
 </div>

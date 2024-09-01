@@ -1432,7 +1432,7 @@ p{
     <button>Add Friend</button>
 </div>
 ```
-* 9e
+* 9g
 ```html
 <style>
     p{
@@ -1530,5 +1530,144 @@ p{
 <div>
     <button class="search-button">Google Search</button>
     <button class="lucky-button">I'm Feeling Lucky</button>
+</div>
+```
+
+## Nested Layout Technique
+* Link : https://www.supersimple.dev/css/nested-layouts-technique
+* There are two types of layout
+    * Vertical layout
+    * Horizontal layout
+
+![alt text](image-16.png)
+
+* Here red is Vertical layout and Blue is Horizontal layout
+
+### Exercise
+![alt text](image-17.png)
+* 10a
+![alt text](image-19.png)
+![alt text](image-18.png)
+* 10b
+![alt text](image-20.png)
+* 10c
+![alt text](image-21.png)
+![alt text](image-22.png)
+* 10d
+![alt text](image-23.png)
+* 10e
+```html
+<style>
+    p{
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .horizontal-outer{
+        width: 150px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .cat-image{
+        width: 150px;
+        height: 100.8px;
+    }
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .user-name,button{
+        margin-left: 8px;
+    }
+    .mutual{
+        font-size: 12px;
+        color:#606060;
+    }
+    .vertical2{
+        width: 150px;
+    }
+    .hori1,.hori2{
+        display: inline-block;
+    }
+    
+    .icon{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 8px;
+        vertical-align: middle;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding:5px 15px;
+        border: none;
+        color:#fff;
+        background-color: rgb(17, 110, 250);
+        border-radius: 2px;
+        font-size: 10px;
+    }
+</style>
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Oliver</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">2 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
+</div>
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Mimi</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">3 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
+</div>
+<div class="horizontal-outer">
+    <div class="vertical">
+        <img src="./dog.jpg" class="cat-image" alt="cat-img">
+    </div>
+    <div class="vertical1">
+        <p class="user-name">Rex</p>
+    </div>
+    <div class="vertical2">
+        <div class="hori1">
+            <img class="icon" src="./dog2.jpg" alt="dog2">
+        </div>
+        <div class="hori2">
+            <p class="mutual">4 mutual friends</p>
+        </div>
+    </div>
+    <div class="vertical3">
+        <button>Add Friend</button>
+    </div>
 </div>
 ```
