@@ -7,3 +7,9 @@
 .video-title{
     width: 300px;
 }
+.video-preview{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-left: 15px;
+}

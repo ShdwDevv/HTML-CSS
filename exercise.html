@@ -1,25 +1,36 @@
 <style>
-    .cat-image{
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        object-position: center;
-        vertical-align: middle;
+    div{
+        text-align: center;
     }
-    .word{
-        border: none;
-        padding: 5px 40px 0px 5px;
+    .input-box{
+        font-size: 16px;
+        border:none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        width: 500px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+    }
+    .google{
+        width: 300px;
+        margin-bottom: 20px;
     }
     button{
-        color: #fff;
-        font-weight: bold;
-        padding: 5px 15px;
-        border: none;
-        border-radius: 20px;
-        background-color: rgb(39, 98, 246);
+        padding:10px;
+        border:none;
+        margin-right: 10px;
     }
 </style>
-<img src="./cat.jpg" class="cat-image" alt="cat-img">
-<input class="word" placeholder="What's happening?">
-<button>Tweet</button>
+<div>
+    <img src="./google.svg" alt="google" class="google">
+</div>
+<div>
+    <input type="text" class="input-box" placeholder="Search Google or type a URL">
+</div>
+<div>
+    <button class="search-button">Google Search</button>
+    <button class="lucky-button">I'm Feeling Lucky</button>
+</div>

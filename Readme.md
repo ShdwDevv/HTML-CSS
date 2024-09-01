@@ -1144,3 +1144,391 @@ p{
 * To switch block to inline-block - display:inline-block
 * Inline block to block - display:block
 ![alt text](image-11.png)
+* 8a
+```html
+<style>
+    input{
+        display: block;
+        margin-bottom: 5px;
+    }
+</style>
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Email">
+```
+* 8b
+```html
+<style>
+    p,button{
+        font-family: Arial;
+    }
+    .more{
+        display: inline-block;
+        width: 210px;
+        vertical-align: middle;
+    }
+</style>
+<p class="more">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+<button>Yes</button>
+<button>No</button>
+```
+* 8c
+```html
+<style>
+    .input-box{
+        display: block;
+        font-size: 16px;
+        border:none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        width: 500px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+    .google{
+        width: 300px;
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+</style>
+<img src="./google.svg" alt="google" class="google">
+<input type="text" class="input-box" placeholder="Search Google or type a URL">
+```
+![alt text](image-12.png)
+* 8d
+```html
+<style>
+    input{
+        padding:5px;
+        border:none;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    .fname,.lname{
+        width: 98.5px;
+    }
+    .email{
+        display: block;
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .sign-up{
+        width: 200;
+        background-color: dodgerblue;
+        font-weight: bold;
+        border:none;
+        padding-top:8px;
+        padding-bottom: 8px;
+        color:#fff;
+        border-radius: 5px;
+    }
+</style>
+<input type="text" class="fname" placeholder="First name">
+<input type="text" class="lname" placeholder="Last name">
+<input type="text" class="email" placeholder="Email">
+<button class="sign-up">Sign Up</button>
+```
+* 8e
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    .source,.destination{
+        display: block;
+    }
+    .request{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    input{
+        border: none;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
+        padding:10px 100px 10px 10px;
+    }
+    .source{
+        margin-bottom: 5px;
+    }
+    .destination{
+        margin-bottom: 20px;
+    }
+    button{
+        padding:10px 10px;
+        border: none;
+    }
+    .request-button{
+        background-color: black;
+        color: #fff;
+        margin-right: 10px;
+    }
+    .later-button{
+        color:#000;
+    }
+</style>
+<p class="request">Request a ride now</p>
+<input type="text" class="source" placeholder="Enter pickup location">
+<input type="text" class="destination" placeholder="Enter destination">
+<button class="request-button">Request now</button>
+<button class="later-button">Schedule for later</button>
+```
+## Div element
+* div means division
+* block - Take up the entire linne int the **container**
+
+![alt text](image-13.png)
+* 9a
+```html
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+<div class="box"></div>
+```
+* 9b
+```html
+<style>
+    .circle{
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 50%;
+    }
+</style>
+<div class="circle"></div>
+```
+* 9c
+```html
+<style>
+    *{
+        font-family : Arial;
+    }
+    .container{
+        padding : 15px;
+        border-style:solid;
+        border-width:1px;
+        width: 300px;
+    }
+    .agree{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+    <p class="agree">Satisfied with our service?</p>
+    <button>Yes</button>
+    <button>No</button>
+</div>
+```
+* 9d
+```html
+<style>
+    .container{
+        font-family : Arial;
+        padding : 15px;
+        background-color: grey;
+        width: 360px;
+        color: #fff;
+    }
+    .title{
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .description{
+        color: rgb(160, 160, 160);
+    }
+</style>
+<div class="container">
+    <p class="title">Install YouTube Music</p>
+    <p class="description">Add YouTube Music to your desktop for quick and easy access</p>
+</div>
+```
+![alt text](image-14.png)
+* 9e
+```html
+<style>
+    .container{
+        padding:10px;
+        width: 345px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.25);
+        border-radius: 4px;
+    }
+    .cat-image{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        vertical-align: middle;
+    }
+    .word{
+        border: none;
+        padding: 5px 40px 0px 5px;
+    }
+    button{
+        color: #fff;
+        font-weight: bold;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(39, 98, 246);
+    }
+</style>
+<div class="container">
+    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <input class="word" placeholder="What's happening?">
+    <button>Tweet</button>
+</div>
+```
+* 9f
+```html
+<style>
+    p{
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .container{
+        width: 150px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+    }
+    .cat-image{
+        width: 150px;
+    }
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .user-name,.mutual,button{
+        margin-left: 8px;
+    }
+    .mutual{
+        font-size: 10px;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding:5px 15px;
+        border: none;
+        color:#fff;
+        background-color: rgb(17, 110, 250);
+        border-radius: 2px;
+        font-size: 10px;
+    }
+</style>
+<div class="container">
+    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <p class="user-name">Oliver</p>
+    <p class="mutual">2 mutual friends</p>
+    <button>Add Friend</button>
+</div>
+```
+* 9e
+```html
+<style>
+    p{
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+    }
+    .container{
+        width: 150px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .cat-image{
+        width: 150px;
+    }
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .user-name,.mutual,button{
+        margin-left: 8px;
+    }
+    .mutual{
+        font-size: 10px;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding:5px 15px;
+        border: none;
+        color:#fff;
+        background-color: rgb(17, 110, 250);
+        border-radius: 2px;
+        font-size: 10px;
+    }
+</style>
+<div class="container">
+    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <p class="user-name">Oliver</p>
+    <p class="mutual">2 mutual friends</p>
+    <button>Add Friend</button>
+</div>
+<div class="container">
+    <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+    <p class="user-name">Mimi</p>
+    <p class="mutual">3 mutual friends</p>
+    <button>Add Friend</button>
+</div>
+<div class="container">
+    <img src="./dog.jpg" class="cat-image" alt="cat-img">
+    <p class="user-name">Rex</p>
+    <p class="mutual">4 mutual friends</p>
+    <button>Add Friend</button>
+</div>
+```
+![alt text](image-15.png)
+* 9h
+```html
+<style>
+    div{
+        text-align: center;
+    }
+    .input-box{
+        font-size: 16px;
+        border:none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        width: 500px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+    }
+    .google{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    button{
+        padding:10px;
+        border:none;
+        margin-right: 10px;
+    }
+</style>
+<div>
+    <img src="./google.svg" alt="google" class="google">
+</div>
+<div>
+    <input type="text" class="input-box" placeholder="Search Google or type a URL">
+</div>
+<div>
+    <button class="search-button">Google Search</button>
+    <button class="lucky-button">I'm Feeling Lucky</button>
+</div>
+```
