@@ -1848,3 +1848,624 @@ p{
 * When we use flexbox - In youtube top right we have 4 element but when we sign out there will be only  3 element os 1fr 1fr 1fr 1fr is an issue , So there flexbox is best (flexible)
 * justify-content : start(default) , place the element **horizontly**
 * align-items : stretch(default) , place the element **vertically**
+### Exercise
+![alt text](image-26.png)
+* 12a
+```html
+<style>
+    .container{
+        display: flex;
+    }
+</style>
+<div class="container">
+    <div style="
+        width:200px;
+        background-color:lightblue;
+    ">200px</div>
+    <div style="
+        width:75px;
+        background-color:lightpink;
+    ">75px</div>
+</div>
+```
+* 12b
+```html
+<style>
+    .container{
+        display: flex;
+    }
+</style>
+<div class="container">
+    <div style="
+        width:50px;
+        background-color:lightblue;
+    ">item1</div>
+    <div style="
+        background-color:lightpink;
+        flex:1;
+    ">item2</div>
+    <div style="
+        width:75px;
+        background-color:lightblue;
+    ">item3</div>
+</div>
+```
+* 12c
+```html
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+</style>
+<div class="container">
+    <div style="
+        width:50px;
+        background-color:lightpink;
+    ">item1</div>
+    <div style="
+        background-color:lightpink;
+        width:50px;
+    ">item2</div>
+    <div style="
+        width:50px;
+        background-color:lightpink;
+    ">item3</div>
+    <div style="
+        width:50px;
+        background-color:lightpink;
+    ">item4</div>
+</div>
+```
+* 12d
+```html
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid #606060;
+        align-items: center;
+        height:50px;
+    }
+</style>
+<div class="container">
+    <div style="
+        width:50px;
+        background-color:lightpink;
+    ">item1</div>
+    <div style="
+        background-color:lightpink;
+        width:50px;
+    ">item2</div>
+</div>
+```
+![alt text](image-27.png)
+* 12e
+```html
+<style>
+    *{
+        margin-bottom: 0px;
+        font-family: Arial;
+    }
+    .container{
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        width: 300px;
+        padding:10px;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:10px;
+    }
+    .count{
+        font-weight: bold;
+        background-color: rgba(16, 57, 237, 0.705);
+        padding:5px 10px;
+        border-radius: 10px;
+        font-size: 8px;
+        color: #fff;
+    }
+
+</style>
+<div class="container">
+    <div class="box">
+        <div>Home</div>
+        <div class="count">14</div>
+    </div>
+    <div class="box">
+        <div>Notifications</div>
+        <div class="count">3</div>
+    </div>
+    <div class="box">
+        <div>Messages</div>
+        <div class="count">5</div>
+    </div>
+</div>
+```
+*12f
+```html
+<style>
+    .container{
+        font-family: Arial;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        padding:10px 15px 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 3px;
+    }
+    .home{
+        font-weight: 600;
+        color:#fff;
+    }
+    input{
+        padding:10px 300px 8px 15px;
+        border-radius: 30px;
+        border:none;
+    }
+    button{
+        background-color:blueviolet;
+        border:1px solid #fff;
+        color:#fff;
+        padding:8px 15px;
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <div class="home">Home</div>
+    <div class="input">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="download">
+        <button>Download</button>
+    </div>
+</div>
+```
+* 12g
+```html
+<style>
+    p{
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .container{
+        width: 300px;
+        font-family: Arial;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .image{
+        width: 70px;
+    }
+    .detail{
+        flex:1;
+        font-size: 12px;
+    }
+    .name{
+        font-weight: 600;
+    }
+    .category,.popular{
+        color:#606060;
+    }
+    .follow{
+        width: 70px;
+    }
+    button{
+        padding:5px 10px;
+        background-color: rgb(12, 108, 241);
+        color:#fff;
+        font-weight: 600;
+        border:none;
+        border-radius: 3px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="image">
+            <img src="./cat.jpg" alt="cat">
+        </div>
+        <div class="detail">
+            <p class="name">oliver</p>
+            <p class="category">the cat</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="follow">
+            <button>Follow</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image">
+            <img src="./cat2.jpg" alt="cat">
+        </div>
+        <div class="detail">
+            <p class="name">Mimi</p>
+            <p class="category">Sleepy cat</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="follow">
+            <button>Follow</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="image">
+            <img src="./dog.jpg" alt="cat">
+        </div>
+        <div class="detail">
+            <p class="name">Rex</p>
+            <p class="category">Happy Buildog</p>
+            <p class="popular">Popular</p>
+        </div>
+        <div class="follow">
+            <button>Follow</button>
+        </div>
+    </div>
+</div>
+```
+## Nested Flexbox
+* Make the inside box of flex element is flexbox
+* flex-shrink:0 ; -> No shrink
+* width:0; -> shrink
+### Exercise
+![alt text](image-28.png)
+* 13a
+```html
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        width: 100px;
+        height: 50px;
+        background-color: lightpink;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        background-color: #000;
+        color:#fff;
+    }
+    .box2{
+        width: 200px;
+        height: 50px;
+        background-color: lightblue;
+    }
+</style>
+<div class="container">
+    <div class="box1">
+        <p>item1</p>
+    </div>
+    <div class="box2"></div>
+</div>
+```
+* 13b
+```html
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        width: 100px;
+        height: 50px;
+        background-color: lightpink;
+    }
+    p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .change{
+        background-color: #000;
+        color:#fff;
+    }
+    .box2{
+        width: 200px;
+        height: 50px;
+        background-color: lightblue;
+    }
+    .row2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2">
+        <p>row1</p>
+        <div class="row2">
+            <p class="change">row2</p>
+            <p class="change">row2</p>
+        </div>
+    </div>
+</div>
+```
+![alt text](image-30.png)
+* 13c
+![alt text](image-29.png)
+* 13d
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container{
+        width: 390px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        padding:10px 20px 25px 15px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .outer-row-1,.inner-col-2,.inner-row-3{
+        color:#606060;
+    }
+    .outer-row-1{
+        font-size: 14px;
+    }
+    .outer-row-2{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-row-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-col-1{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .inner-row-2{
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+</style>
+<div class="container">
+        <div class="outer-row-1">
+        <p class="inbox">
+            ALL INBOXES
+        </p>
+    </div>
+    <div class="outer-row-2"><!-- Flex -->
+        <div class="outer-col-1">
+            <img src="./cat.jpg" alt="">
+        </div>
+        <div class="outer-col-2">
+            <div class="inner-row-1">
+                <div class="inner-col-1">
+                    Chewy Promotions
+                </div>
+                <div class="inner-col-2">
+                    4:58 PM
+                </div>
+            </div>
+            <div class="inner-row-2">
+                Biggest sales of the year!
+            </div>
+            <div class="inner-row-3">
+                Hey there! We're writing to tell you about our...
+            </div>
+        </div>
+    </div>
+</div>
+```
+* 13e
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container{
+        width: 390px;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        padding:10px 20px 25px 15px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    .outer-row-1,.inner-col-2,.inner-row-3{
+        color:#606060;
+    }
+    .outer-row-1{
+        font-size: 14px;
+    }
+    .outer-row-2{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-row-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .inner-col-1{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .inner-row-2{
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+</style>
+<div class="container">
+        <div class="outer-row-1">
+        <p class="inbox">
+            ALL INBOXES
+        </p>
+    </div>
+    <div class="outer-row-2"><!-- Flex -->
+        <div class="outer-col-1">
+            <img src="./cat.jpg" alt="">
+        </div>
+        <div class="outer-col-2">
+            <div class="inner-row-1">
+                <div class="inner-col-1">
+                    Chewy Promotions
+                </div>
+                <div class="inner-col-2">
+                    4:58 PM
+                </div>
+            </div>
+            <div class="inner-row-2">
+                Biggest sales of the year!
+            </div>
+            <div class="inner-row-3">
+                Hey there! We're writing to tell you about our...
+            </div>
+        </div>
+    </div>
+    <div class="outer-row-2"><!-- Flex -->
+        <div class="outer-col-1">
+            <img src="./dog.jpg" alt="">
+        </div>
+        <div class="outer-col-2">
+            <div class="inner-row-1">
+                <div class="inner-col-1">
+                    Best Buy
+                </div>
+                <div class="inner-col-2">
+                    12:32 PM
+                </div>
+            </div>
+            <div class="inner-row-2">
+                Your Best Buy eRecipt
+            </div>
+            <div class="inner-row-3">
+                Thank you for shopping at Best Buy, here is...
+            </div>
+        </div>
+    </div>
+    <div class="outer-row-2"><!-- Flex -->
+        <div class="outer-col-1">
+            <img src="./cat.jpg" alt="">
+        </div>
+        <div class="outer-col-2">
+            <div class="inner-row-1">
+                <div class="inner-col-1">
+                    Netflix
+                </div>
+                <div class="inner-col-2">
+                    9:00 AM
+                </div>
+            </div>
+            <div class="inner-row-2">
+                Here's what's coming soon to Netflix
+            </div>
+            <div class="inner-row-3">
+                Brand new movies and shows, old favorites...
+            </div>
+        </div>
+    </div>
+</div>
+```
+![alt text](image-31.png)
+* 13f
+![alt text](image-32.png)
+* 13g
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    .container{
+        width: 700px;
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .outer-row-2{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .outer-col-2{
+        width: 340px;
+        margin-left: 10px;
+    }
+    .inner-row-1,.tag{
+        color:#606060;
+    }
+    .inner-row-1{
+        margin-bottom: 5px;
+    }
+    .outer-row-3{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #606060;
+        border-radius: 14px;
+        width: 340px;
+        overflow: hidden;
+    }
+    .inner-col-1{
+        width: 150px;
+        height: 100px;
+        background-color: rgb(220, 220, 220);
+        
+    }
+    .inner-col-2{
+        padding:20px;
+        
+    }
+</style>
+<div class="container"> <!--Flex-->
+    <div class="outer-col-1">
+        <img class="image" src="./cat.jpg" alt="">
+    </div>
+    <div class="outer-col-2">
+        <div class="outer-row-1">supersimple.dev <span class="tag">&#64;SuperSimpleDev</span></div>
+        <div class="outer-row-2">What is backend web development? A complete overview. New video is up!</div>
+        <div class="outer-row-3">
+            <div class="inner-col-1"></div>
+            <div class="inner-col-2">
+                <div class="inner-row-1">youtube.com</div>
+                <div class="inner-row-2">Backend web development - a complete overview (2021)</div>
+            </div>
+        </div>
+    </div>
+</div>
+```
