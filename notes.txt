@@ -7,7 +7,10 @@
 
 
 
-
+<a href="https://www.youtube.com/watch?v=v5TZsxg9QMQ" class="thumbnail-image">
+    <img class="thumbnail" src="./thumbnails/inter-milan.jpg" alt="football" >
+    <div class="video-time">1:09</div>
+</a>
 
 
 

@@ -1,4 +1,5 @@
 # Learn New
+* Reference : https://supersimpledev.github.io/references/html-css-reference.pdf
 ## HTML
 * Extra Space removed by HTML
 * New line spaces also ignored in HTML
@@ -2469,3 +2470,505 @@ p{
     </div>
 </div>
 ```
+## CSS position
+* position : static; is the default position
+* position : fixed; -> make the element get out from the position and it doesn't take space and we can stretch the size by using top,left,right,bottom
+* If we want to resize the element based on the page , we can use top,left,right,bottom
+* If we want fixed length , then we use width and height
+![alt text](image-33.png)
+* 14a
+```html
+<style>
+    .body{
+        height: 3000px;
+    }
+    p{
+        background-color: #000;
+        color:#fff;
+    }
+    .box{
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
+</style>
+<div class="body">
+    <div class="box">
+        <p>bottom-right</p>
+    </div>
+</div>
+```
+* 14b
+```html
+<style>
+    .body{
+        height: 3000px;
+    }
+    p{
+        color:#fff;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sidebar{
+        position: fixed;
+        bottom:0px;
+        right:0px;
+        top:0px;
+        background-color: green;
+        width: 100px;
+    }
+</style>
+<div class="body">
+    <div class="sidebar">
+        <p>bottom-right</p>
+    </div>
+</div>
+```
+* 14c
+```html
+<style>
+    .body{
+        height: 3000px;
+    }
+    .cover{
+        position: fixed;
+        bottom:0px;
+        right:0px;
+        top:0px;
+        left:0px;
+        background-color: #000;
+    }
+</style>
+<div class="body">
+    <div class="cover">
+    </div>
+</div>
+```
+![alt text](image-34.png)
+* 14d
+```html
+<style>
+    .body{
+        height: 3000px;
+        font-family: Arial;
+    }
+    .side{
+        color:#fff;
+        font-size: 25px;
+    }
+    p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sidebar{
+        position: fixed;
+        bottom:0px;
+        right:0px;
+        top:0px;
+        background-color: green;
+        width: 400px;
+    }
+    .cover{
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background-color: rgba(0,0,0,0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        width: 700px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding:30px;
+    }
+    .title{
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .desc{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .close{
+        padding:10px 30px;
+        border-radius: 3px;
+        border: none;
+    }
+</style>
+<div class="body">
+    <div class="sidebar">
+        <p class="side">bottom-right</p>
+    </div>
+    <div class="cover">
+        <div class="box">
+            <p class="title">Modal Title</p>
+            <p class="desc">This is a modal</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+    
+</div>
+```
+![alt text](image-35.png)
+* 14e
+```html
+<style>
+    .container{
+        font-family: Arial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        padding:5px 30px 5px 30px;
+        align-items: center;
+    }
+    .cat-image{
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+    .left{
+        display: flex;
+        align-items: center;
+    }
+    .name{
+        font-weight: bold;
+    }
+    button{
+        padding:7px 12px;
+        border: none;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+    .add-button{
+        background-color: dodgerblue;
+        color: #fff;
+    }
+</style>
+<div class="body">
+    <div class="container">
+        <div class="left">
+            <img class="cat-image" src="./cat.jpg" alt="cat-image">
+            <p class="name">Oliver Cat</p>
+        </div>
+        <div class="right">
+            <button class="add-button">Add Friend</button>
+            <button class="message-button">Message</button>
+        </div>
+    </div>
+</div>
+```
+* 14f
+```html
+<style>
+    .sidebar-1{
+        width: 70px;
+        position: fixed;
+        bottom:0;
+        top:0;
+        left:0;
+        background-color: rgb(33, 33, 33);
+        padding:20px 10px;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .sidebar-2{
+        font-family: Arial;
+        position: fixed;
+        top:0;
+        bottom:0;
+        left:90px;
+        padding:30px 20px;
+        width: 150px;
+        background-color: rgb(55, 55, 55);
+    }
+    .info-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+    }
+    .info{
+        font-weight: bold;
+        color:#fff;
+    }
+    .plus,.hashtag{
+        color:#cdc5c5;
+        font-size: 16px;
+    }
+    .hashtag{
+        margin-bottom: 22px;
+    }
+    .plus{
+        font-size: 24px;
+    }
+</style>
+<div class="body">
+    <div class="sidebar-1">
+        <img src="./cat.jpg" alt="">
+        <img src="./cat2.jpg" alt="">
+        <img src="./dog.jpg" alt="">
+    </div>
+    <div class="sidebar-2">
+        <div class="info-box">
+            <p class="info">INFO</p>
+            <p class="plus">&plus;</p>
+        </div>
+        <p class="hashtag">&#35; new-videos</p>
+        <p class="hashtag">&#35; updates</p>
+        <p class="hashtag">&#35; faq</p>
+    </div>
+</div>
+```
+## Position Absolute and Relative
+* fixed : placed in the **browser window** (present window la andha position la irukum)
+* absolute : placed on the page (andha page la apdiye fix aagidhum)
+* Generally code written below will appear top of the other element
+* To get aware from that problem we use z-index:0px; (default) . The more value we have , if will come front
+### Exercise
+![alt text](image-36.png)
+* 15a
+```html
+<style>
+    *{
+        background-color: #000;
+    }
+    .container{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+    }
+    .close{
+        position: absolute;
+        font-size: 20px;
+        font-family: Arial;
+        background-color: #000;
+        color: #fff;
+        padding:10px 15px;
+        border-radius: 50%;
+        top:10px;
+        right:10px;
+    }
+</style>
+<div class="container">
+    <div class="close">
+        X
+    </div>
+</div>
+```
+* 15b
+```html
+<style>
+    *{
+        background-color: #000;
+    }
+    .container{
+        position: relative;
+        width: 550px;
+        height: 300px;
+        background-color: #fff;
+    }
+    .close{
+        position: absolute;
+        width: 320px;
+        height: 180px;
+        background-color: gray;
+        bottom:15px;
+        right:15px;
+    }
+</style>
+<div class="container">
+    <div class="close"></div>
+</div>
+```
+![alt text](image-37.png)
+* 15c
+```html
+<style>
+    .container{
+        width: 550px;
+        height: 300px;
+        background-color: #fff;
+    }
+    .box{
+        position: fixed;
+        width: 320px;
+        height: 180px;
+        background-color: gray;
+        bottom:15px;
+        right:15px;
+    }
+    .close{
+        position: absolute;
+        top:-15px;
+        left:-15px;
+        font-size: 20px;
+        font-family: Arial;
+        background-color: #000;
+        color: #fff;
+        padding:10px 15px;
+        border-radius: 50%;
+    }
+</style>
+<div class="container">
+    <div class="box">
+        <div class="close">X</div>
+    </div>
+</div>
+```
+* 15d
+```html
+<style>
+    .container{
+        width: 550px;
+        height: 300px;
+        background-color: #fff;
+    }
+    .box{
+        position: fixed;
+        width: 320px;
+        height: 180px;
+        background-color: gray;
+        bottom:15px;
+        right:15px;
+    }
+    .close{
+        position: absolute;
+        top:-15px;
+        left:-15px;
+        font-size: 20px;
+        font-family: Arial;
+        background-color: #000;
+        color: #fff;
+        padding:10px 15px;
+        border-radius: 50%;
+    }
+    .time{
+        position: absolute;
+        color:#fff;
+        background-color: #000;
+        padding:3px;
+        bottom:8px;
+        right:8px;
+        border-radius: 2px;
+    }
+</style>
+<div class="container">
+    <div class="box">
+        <div class="close">X</div>
+        <div class="time">0:29</div>
+    </div>
+</div>
+```
+![alt text](image-38.png)
+* 15e
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    .container {
+        position: relative;
+        display: inline-block; /*This is the main thing we made this as inline , so that it have the width as image*/
+    }
+    .image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .promotion {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+    }
+</style>
+<div class="container">
+    <img src="./shirt.jpg" alt="" class="image">
+    <div class="promotion">20% OFF</div>
+</div>
+```
+* 15f
+```html
+<style>
+    *{
+        font-family: Arial;
+    }
+    .container {
+        position: relative;
+        display: inline-block; /*This is the main thing we made this as inline , so that it have the width as image*/
+    }
+    .image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    .promotion {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        background-color: black;
+        color: white;
+        padding: 8px 12px;
+    }
+    .cart-block{
+        position: absolute;
+        bottom:0;
+        right: 0;
+        left:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 80px;
+    }
+    button{
+        padding: 5px 10px;
+        border: 1px solid #000;
+    }
+</style>
+<div class="container">
+    <img src="./shirt.jpg" alt="" class="image">
+    <div class="promotion">20% OFF</div>
+    <div class="cart-block">
+        <button>Add to Cart</button>
+    </div>
+</div>
+```
+## Tooltip
+* sidebar-link img -> targeting all image inside sidebar-link
+* if we make flex-direction:column; then the properties reversed
+    * align-items -> horizontal direction
+    * justify-content -> vertical direction
+### Exercise
+
+![alt text](image-39.png)
+<br>
+
+<video width="320" height="240" controls>
+  <source src="./16-2.mp4" type="video/mp4">
+</video>
+
+## More CSS
+* Inheritance mostly works with the text styles
+* semantic tag - Give special meaning to the screen reader
+### Exercise
+![alt text](image-40.png)
+![alt text](image-41.png)
+![alt text](image-42.png)

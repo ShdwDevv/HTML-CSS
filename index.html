@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>YouTube Clone</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="left-section">
                 <img class="hamburger-menu" src="./icons/hamburger-menu.svg" alt="hamburger-menu">
                 <img class="youtube-logo" src="./icons/youtube-logo.svg" alt="">
@@ -14,109 +15,234 @@
                 <input class="search-box" type="text" placeholder="Search">
                 <button class="search-button">
                     <img class="search-icon" src="./icons/search.svg" alt="">
+                    <div class="tooltip">Search</div>
                 </button>
                 <button class="voice-search-button">
                     <img class="voice-search-icon" src="./icons/voice-search-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div>
                 </button>
             </div>
             <div class="right-section">
-                <img class="upload-icon" src="./icons/upload.svg" alt="">
-                <img class="youtube-apps-icon" src="./icons/youtube-apps.svg" alt="">
-                <img class="notifications-icon" src="./icons/notifications.svg" alt="">
+                <div class="tooltip-container">
+                    <img class="upload-icon" src="./icons/upload.svg" alt="">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="tooltip-container">
+                    <img class="youtube-apps-icon" src="./icons/youtube-apps.svg" alt="">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+                <div class="notification-block">
+                    <img class="notifications-icon" src="./icons/notifications.svg" alt="">
+                    <div class="notification-count">5</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
                 <img class="profile-icon" src="./channel/arshath-ahamed.jpg" alt="">
             </div>
-        </div>
-        <div class="video-grid">
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/inter-milan.jpg" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/seriea.jpg" alt="seriea">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">INTER-ATALANTA 4-0 | HIGHLIGHTS | Thuram nets brace in San Siro goalfest | Serie A 2024/25</p>
-                        <p class="video-author">Serie A</p>
-                        <p class="video-stats">862K views &#183; 17 hours ago</p>
-                    </div>
-                </div>
+        </header>
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="./icons/home.svg" alt="">
+                <p>Home</p>
             </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/lalaland.webp" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/movieclip.jpg" alt="movieclip">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">La La Land (2016) - A Lovely Night Scene (5/11) | Movieclips</p>
-                        <p class="video-author">Movieclips</p>
-                        <p class="video-stats">6.1M views &#183; 6 years ago</p>
-                    </div>
-                </div>
+            <div class="sidebar-link">
+                <img src="./icons/explore.svg" alt="">
+                <p>Explore</p>
             </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/productivity.webp" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/linux.jpg" alt="movieclip">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">OPEN SOURCE alternatives to the MOST POPULAR productivity apps!</p>
-                        <p class="video-author">The Linux Experiment</p>
-                        <p class="video-stats">1.2M views &#183; 11 months ago</p>
-                    </div>
-                </div>
+            <div class="sidebar-link">
+                <img src="./icons/subscription.svg" alt="">
+                <p>Subscriptions</p>
             </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/bookshow.webp" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/bookshow.jpg" alt="movieclip">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Namma Chennai's most intriguing story | Interview with V.Sriram | The Book Show #historyofmadras</p>
-                        <p class="video-author">The Book Show</p>
-                        <p class="video-stats">58K views &#183; 2 months ago</p>
-                    </div>
-                </div>
+            <div class="sidebar-link">
+                <img src="./icons/originals.svg" alt="">
+                <p>Originals</p>
             </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/javamulti.webp" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/javamulti.jpg" alt="movieclip">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Java Multithreading: Synchronization, Locks, Executors, Deadlock, CountdownLatch & CompletableFuture</p>
-                        <p class="video-author">Engineering Digest</p>
-                        <p class="video-stats">45K views &#183; 1 month ago</p>
-                    </div>
-                </div>
+            <div class="sidebar-link">
+                <img src="./icons/youtube-music.svg" alt="">
+                <p>YouTube Music</p>
             </div>
-            <div class="video-preview">
-                <div class="thumbnail-row">
-                    <img class="thumbnail" src="./thumbnails/beast.webp" alt="football">
-                </div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="./channel/sun.jpg" alt="movieclip">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">Jolly O Gymkhana - Fun dance promo | Beast | Thalapathy Vijay | Sun Pictures | Nelson | Anirudh</p>
-                        <p class="video-author">Sun TV</p>
-                        <p class="video-stats">8.6M views &#183; 2 years ago</p>
-                    </div>
-                </div>
+            <div class="sidebar-link">
+                <img src="./icons/library.svg" alt="">
+                <p>Library</p>
             </div>
-        </div>
+        </nav>
+        <main>
+            <section class="video-grid">
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=v5TZsxg9QMQ" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/inter-milan.jpg" alt="football" >
+                            <div class="video-time">5:00</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/seriea.jpg" alt="seriea">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img class="profile-picture" src="./channel/seriea.jpg" alt="seriea">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">Serie A</p>
+                                    <p>9.46M Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=v5TZsxg9QMQ"> 
+                                <p class="video-title">INTER-ATALANTA 4-0 | HIGHLIGHTS | Thuram nets brace in San Siro goalfest | Serie A 2024/25</p>
+                            </a>
+                            <p class="video-author">Serie A</p>
+                            <p class="video-stats">862K views &#183; 17 hours ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=_8w9rOpV3gc" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/lalaland.webp" alt="lalaland" >
+                            <div class="video-time">3:45</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/movieclip.jpg" alt="seriea">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img class="profile-picture" src="./channel/movieclip.jpg" alt="movieclip">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">Movieclips</p>
+                                    <p>62.1M Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=_8w9rOpV3gc">
+                                <p class="video-title">La La Land (2016) - A Lovely Night Scene (5/11) | Movieclips</p>
+                            </a>
+                            <p class="video-author">Movieclips</p>
+                            <p class="video-stats">6.1M views &#183; 6 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=P8accXNcwjs" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/productivity.webp" alt="productivity">
+                            <div class="video-time">15:36</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/linux.jpg" alt="movieclip">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img class="profile-picture" src="./channel/linux.jpg" alt="movieclip">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">The Linux Experiment</p>
+                                    <p>362K Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=P8accXNcwjs">
+                                <p class="video-title">OPEN SOURCE alternatives to the MOST POPULAR productivity apps!</p>
+                            </a>
+                            <p class="video-author">The Linux Experiment</p>
+                            <p class="video-stats">1.2M views &#183; 11 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=s5NSu2-nvPI" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/bookshow.webp" alt="bookshow">
+                            <div class="video-time">21:49</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/bookshow.jpg" alt="movieclip">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img src="./channel/bookshow.jpg" alt="movieclip">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">The Book Show</p>
+                                    <p>721K Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=s5NSu2-nvPI">
+                                <p class="video-title">Namma Chennai's most intriguing story | Interview with V.Sriram | The Book Show #historyofmadras</p>
+                            </a>
+                            <p class="video-author">The Book Show</p>
+                            <p class="video-stats">58K views &#183; 2 months ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=4aYvLz4E1Ts" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/javamulti.webp" alt="multithreading">
+                            <div class="video-time">3:55:40</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/javamulti.jpg" alt="Java">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img src="./channel/javamulti.jpg" alt="Java">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">Engineering Digest</p>
+                                    <p>65.8K Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=4aYvLz4E1Ts">
+                                <p class="video-title">Java Multithreading: Synchronization, Locks, Executors, Deadlock, CountdownLatch & CompletableFuture</p>
+                            </a>
+                            <p class="video-author">Engineering Digest</p>
+                            <p class="video-stats">45K views &#183; 1 month ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=AvDrTyXNOxg" class="thumbnail-image">
+                            <img class="thumbnail" src="./thumbnails/beast.webp" alt="movie">
+                            <div class="video-time">1:09</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="./channel/sun.jpg" alt="movieclip">
+                            <div class="channel-info">
+                                <div class="photo">
+                                    <img src="./channel/sun.jpg" alt="movieclip">
+                                </div>
+                                <div class="followers">
+                                    <p class="channel-name">Sun TV</p>
+                                    <p>28.2M Subscribers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=AvDrTyXNOxg">
+                                <p class="video-title">Jolly O Gymkhana - Fun dance promo | Beast | Thalapathy Vijay | Sun Pictures | Nelson | Anirudh</p>
+                            </a>
+                            <p class="video-author">Sun TV</p>
+                            <p class="video-stats">8.6M views &#183; 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
     </body>
 </html>
