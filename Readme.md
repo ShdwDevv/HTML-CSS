@@ -3,7 +3,7 @@
 ## HTML
 * Extra Space removed by HTML
 * New line spaces also ignored in HTML
-![alt text](image.png)
+![alt text](./image/image.png)
 * 1a
 ```html
 <button>Click</button>
@@ -22,7 +22,7 @@
 <p>Hello, World!</p>
 <p>Today i attend my Zeroth review of my final year project</p>
 ```
-![alt text](image-1.png)
+![alt text](./image/image-1.png)
 * 1e
 ```html
 <a href="https://www.google.co.in/">Search with Google</a>
@@ -46,7 +46,7 @@
 * Adding Height and Width for the box is not a good choice , To get inside space use **padding**
 * By default our web browser try to align our button based on text . So to get aware from this , use vertical-align : top;
 
-![alt text](image-2.png)
+![alt text](./image/image-2.png)
 
 ```html
 <style>
@@ -89,7 +89,7 @@
 <button class="tweet-button">Tweet</button>
 ```
 ### Exercise
-![alt text](image-4.png)
+![alt text](./image/image-4.png)
 * 2a
 ```html
 <style>
@@ -184,7 +184,7 @@
 <button class="linkedin-button-1">Apply on company website</button>
 <button class="linkedin-button-2">Save</button>
 ```
-![alt text](image-3.png)
+![alt text](./image/image-3.png)
 * 2f
 ```html
 <style>
@@ -281,7 +281,7 @@
 ```
 ### Exercise
 <video width="320" height="240" controls>
-  <source src="./3-1.mp4" type="video/mp4">
+  <source src="./video/3-1.mp4" type="video/mp4">
 </video>
 
 * 3a
@@ -411,7 +411,7 @@ button{
 <button class="linkedin-button-2">Save</button>
 ```
 <video width="320" height="240" controls>
-  <source src="./3-2.mp4" type="video/mp4">
+  <source src="./video/3-2.mp4" type="video/mp4">
 </video>
 
 * 3f
@@ -468,7 +468,7 @@ button{
 ## Chrome DevTools & CSS Box Model
 ### Exercise
 <video width="320" height="240" controls>
-  <source src="./4-1.mp4" type="video/mp4">
+  <source src="./video/4-1.mp4" type="video/mp4">
 </video>
 
 * 4a
@@ -650,7 +650,7 @@ button{
 <button class="tweet-button">Tweet</button>
 ```
 <video width="320" height="240" controls>
-  <source src="./4-2.mp4" type="video/mp4">
+  <source src="./video/4-2.mp4" type="video/mp4">
 </video>
 
 * 4h
@@ -749,7 +749,7 @@ button{
 * span is the most generic text element
 * In HTML , Multiple space is considered as one space . So to get aware from this we use margin-left
 ### Exercise
-![alt text](image-5.png)
+![alt text](./image/image-5.png)
 * 5a
 ```html
 <style>
@@ -840,7 +840,7 @@ button{
 <p class="work">See how Apple at Work can help.</p>
 <p class="read-more">Learn more &#62;</p>
 ```
-![alt text](image-6.png)
+![alt text](./image/image-6.png)
 * 5e
 ```html
 <style>
@@ -957,7 +957,7 @@ button{
     <body></body>
 </html>
 ```
-![alt text](image-7.png)
+![alt text](./image/image-7.png)
 * 6d
 ```html
 <!DOCTYPE html>
@@ -997,9 +997,9 @@ p{
 }
 ```
 ## Images and Text Boxes (here after the assignment will be in the folder)
-![alt text](image-8.png)
+![alt text](./image/image-8.png)
 ### Exercises
-![alt text](image-9.png)
+![alt text](./image/image-9.png)
 * 7a
 ```html
 <style>
@@ -1008,7 +1008,7 @@ p{
         border-radius: 10px;
     }
 </style>
-<img class="image" src="./cat.jpg" alt="cat image">
+<img class="image" src="./image/cat.jpg" alt="cat image">
 ```
 * 7b
 ```html
@@ -1020,7 +1020,7 @@ p{
         object-position: center;
     }
 </style>
-<img class="image" src="./cat.jpg" alt="cat image">
+<img class="image" src="./image/cat.jpg" alt="cat image">
 ```
 * 7c
 ```html
@@ -1033,9 +1033,9 @@ p{
         border-radius: 50%;
     }
 </style>
-<img class="image" src="./cat.jpg" alt="cat image">
+<img class="image" src="./image/cat.jpg" alt="cat image">
 ```
-![alt text](image-10.png)
+![alt text](./image/image-10.png)
 * 7d
 ```html
 <style>
@@ -1133,7 +1133,7 @@ p{
         background-color: rgb(39, 98, 246);
     }
 </style>
-<img src="./cat.jpg" class="cat-image" alt="cat-img">
+<img src="./image/cat.jpg" class="cat-image" alt="cat-img">
 <input class="word" placeholder="What's happening?">
 <button>Tweet</button>
 ```
@@ -1144,7 +1144,7 @@ p{
 1. Inline element - Appear within a line of text eg.span , strong
 * To switch block to inline-block - display:inline-block
 * Inline block to block - display:block
-![alt text](image-11.png)
+![alt text](./image/image-11.png)
 * 8a
 ```html
 <style>
@@ -1193,10 +1193,10 @@ p{
         margin-bottom: 20px;
     }
 </style>
-<img src="./google.svg" alt="google" class="google">
+<img src="./icons/google.svg" alt="google" class="google">
 <input type="text" class="input-box" placeholder="Search Google or type a URL">
 ```
-![alt text](image-12.png)
+![alt text](./image/image-12.png)
 * 8d
 ```html
 <style>
@@ -1278,7 +1278,7 @@ p{
 * div means division
 * block - Take up the entire linne int the **container**
 
-![alt text](image-13.png)
+![alt text](./image/image-13.png)
 * 9a
 ```html
 <style>
@@ -1350,7 +1350,7 @@ p{
     <p class="description">Add YouTube Music to your desktop for quick and easy access</p>
 </div>
 ```
-![alt text](image-14.png)
+![alt text](./image/image-14.png)
 * 9e
 ```html
 <style>
@@ -1382,7 +1382,7 @@ p{
     }
 </style>
 <div class="container">
-    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <img src="./image/cat.jpg" class="cat-image" alt="cat-img">
     <input class="word" placeholder="What's happening?">
     <button>Tweet</button>
 </div>
@@ -1427,7 +1427,7 @@ p{
     }
 </style>
 <div class="container">
-    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <img src="./image/cat.jpg" class="cat-image" alt="cat-img">
     <p class="user-name">Oliver</p>
     <p class="mutual">2 mutual friends</p>
     <button>Add Friend</button>
@@ -1475,25 +1475,25 @@ p{
     }
 </style>
 <div class="container">
-    <img src="./cat.jpg" class="cat-image" alt="cat-img">
+    <img src="./image/cat.jpg" class="cat-image" alt="cat-img">
     <p class="user-name">Oliver</p>
     <p class="mutual">2 mutual friends</p>
     <button>Add Friend</button>
 </div>
 <div class="container">
-    <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+    <img src="./image/cat2.jpg" class="cat-image" alt="cat-img">
     <p class="user-name">Mimi</p>
     <p class="mutual">3 mutual friends</p>
     <button>Add Friend</button>
 </div>
 <div class="container">
-    <img src="./dog.jpg" class="cat-image" alt="cat-img">
+    <img src="./image/dog.jpg" class="cat-image" alt="cat-img">
     <p class="user-name">Rex</p>
     <p class="mutual">4 mutual friends</p>
     <button>Add Friend</button>
 </div>
 ```
-![alt text](image-15.png)
+![alt text](./image/image-15.png)
 * 9h
 ```html
 <style>
@@ -1523,7 +1523,7 @@ p{
     }
 </style>
 <div>
-    <img src="./google.svg" alt="google" class="google">
+    <img src="./icons/google.svg" alt="google" class="google">
 </div>
 <div>
     <input type="text" class="input-box" placeholder="Search Google or type a URL">
@@ -1540,22 +1540,22 @@ p{
     * Vertical layout
     * Horizontal layout
 
-![alt text](image-16.png)
+![alt text](./image/image-16.png)
 
 * Here red is Vertical layout and Blue is Horizontal layout
 
 ### Exercise
-![alt text](image-17.png)
+![alt text](./image/image-17.png)
 * 10a
-![alt text](image-19.png)
-![alt text](image-18.png)
+![alt text](./image/image-19.png)
+![alt text](./image/image-18.png)
 * 10b
-![alt text](image-20.png)
+![alt text](./image/image-20.png)
 * 10c
-![alt text](image-21.png)
-![alt text](image-22.png)
+![alt text](./image/image-21.png)
+![alt text](./image/image-22.png)
 * 10d
-![alt text](image-23.png)
+![alt text](./image/image-23.png)
 * 10e
 ```html
 <style>
@@ -1616,14 +1616,14 @@ p{
 </style>
 <div class="horizontal-outer">
     <div class="vertical">
-        <img src="./cat.jpg" class="cat-image" alt="cat-img">
+        <img src="./image/cat.jpg" class="cat-image" alt="cat-img">
     </div>
     <div class="vertical1">
         <p class="user-name">Oliver</p>
     </div>
     <div class="vertical2">
         <div class="hori1">
-            <img class="icon" src="./dog2.jpg" alt="dog2">
+            <img class="icon" src="./image/dog2.jpg" alt="dog2">
         </div>
         <div class="hori2">
             <p class="mutual">2 mutual friends</p>
@@ -1635,14 +1635,14 @@ p{
 </div>
 <div class="horizontal-outer">
     <div class="vertical">
-        <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+        <img src="./image/cat2.jpg" class="cat-image" alt="cat-img">
     </div>
     <div class="vertical1">
         <p class="user-name">Mimi</p>
     </div>
     <div class="vertical2">
         <div class="hori1">
-            <img class="icon" src="./dog2.jpg" alt="dog2">
+            <img class="icon" src="./image/dog2.jpg" alt="dog2">
         </div>
         <div class="hori2">
             <p class="mutual">3 mutual friends</p>
@@ -1654,14 +1654,14 @@ p{
 </div>
 <div class="horizontal-outer">
     <div class="vertical">
-        <img src="./dog.jpg" class="cat-image" alt="cat-img">
+        <img src="./image/dog.jpg" class="cat-image" alt="cat-img">
     </div>
     <div class="vertical1">
         <p class="user-name">Rex</p>
     </div>
     <div class="vertical2">
         <div class="hori1">
-            <img class="icon" src="./dog2.jpg" alt="dog2">
+            <img class="icon" src="./image/dog2.jpg" alt="dog2">
         </div>
         <div class="hori2">
             <p class="mutual">4 mutual friends</p>
@@ -1682,7 +1682,7 @@ p{
 * This is the replacement of inline-block, vertical-position , margin-right-left
 * To align items vertically we use - align-items: center;
 ### Exercise
-![alt text](image-24.png)
+![alt text](./image/image-24.png)
 * 11a
 ```html
 <div class="container" style="
@@ -1719,7 +1719,7 @@ p{
     <div style="background-color:lightpink">col4</div>
 </div>
 ```
-![alt text](image-25.png)
+![alt text](./image/image-25.png)
 * 11d
 ```html
 <style>
@@ -1784,14 +1784,14 @@ p{
 <div class="box">
     <div class="horizontal-outer">
         <div class="vertical">
-            <img src="./cat.jpg" class="cat-image" alt="cat-img">
+            <img src="./image/cat.jpg" class="cat-image" alt="cat-img">
         </div>
         <div class="vertical1">
             <p class="user-name">Oliver</p>
         </div>
         <div class="vertical2">
             <div class="hori1">
-                <img class="icon" src="./dog2.jpg" alt="dog2">
+                <img class="icon" src="./image/dog2.jpg" alt="dog2">
             </div>
             <div class="hori2">
                 <p class="mutual">2 mutual friends</p>
@@ -1803,14 +1803,14 @@ p{
     </div>
     <div class="horizontal-outer">
         <div class="vertical">
-            <img src="./cat2.jpg" class="cat-image" alt="cat-img">
+            <img src="./image/cat2.jpg" class="cat-image" alt="cat-img">
         </div>
         <div class="vertical1">
             <p class="user-name">Mimi</p>
         </div>
         <div class="vertical2">
             <div class="hori1">
-                <img class="icon" src="./dog2.jpg" alt="dog2">
+                <img class="icon" src="./image/dog2.jpg" alt="dog2">
             </div>
             <div class="hori2">
                 <p class="mutual">3 mutual friends</p>
@@ -1822,14 +1822,14 @@ p{
     </div>
     <div class="horizontal-outer">
         <div class="vertical">
-            <img src="./dog.jpg" class="cat-image" alt="cat-img">
+            <img src="./image/dog.jpg" class="cat-image" alt="cat-img">
         </div>
         <div class="vertical1">
             <p class="user-name">Rex</p>
         </div>
         <div class="vertical2">
             <div class="hori1">
-                <img class="icon" src="./dog2.jpg" alt="dog2">
+                <img class="icon" src="./image/dog2.jpg" alt="dog2">
             </div>
             <div class="hori2">
                 <p class="mutual">4 mutual friends</p>
@@ -1850,7 +1850,7 @@ p{
 * justify-content : start(default) , place the element **horizontly**
 * align-items : stretch(default) , place the element **vertically**
 ### Exercise
-![alt text](image-26.png)
+![alt text](./image/image-26.png)
 * 12a
 ```html
 <style>
@@ -1942,7 +1942,7 @@ p{
     ">item2</div>
 </div>
 ```
-![alt text](image-27.png)
+![alt text](./image/image-27.png)
 * 12e
 ```html
 <style>
@@ -2079,7 +2079,7 @@ p{
 <div class="container">
     <div class="row">
         <div class="image">
-            <img src="./cat.jpg" alt="cat">
+            <img src="./image/cat.jpg" alt="cat">
         </div>
         <div class="detail">
             <p class="name">oliver</p>
@@ -2092,7 +2092,7 @@ p{
     </div>
     <div class="row">
         <div class="image">
-            <img src="./cat2.jpg" alt="cat">
+            <img src="./image/cat2.jpg" alt="cat">
         </div>
         <div class="detail">
             <p class="name">Mimi</p>
@@ -2105,7 +2105,7 @@ p{
     </div>
     <div class="row">
         <div class="image">
-            <img src="./dog.jpg" alt="cat">
+            <img src="./image/dog.jpg" alt="cat">
         </div>
         <div class="detail">
             <p class="name">Rex</p>
@@ -2123,7 +2123,7 @@ p{
 * flex-shrink:0 ; -> No shrink
 * width:0; -> shrink
 ### Exercise
-![alt text](image-28.png)
+![alt text](./image/image-28.png)
 * 13a
 ```html
 <style>
@@ -2200,9 +2200,9 @@ p{
     </div>
 </div>
 ```
-![alt text](image-30.png)
+![alt text](./image/image-30.png)
 * 13c
-![alt text](image-29.png)
+![alt text](./image/image-29.png)
 * 13d
 ```html
 <style>
@@ -2260,7 +2260,7 @@ p{
     </div>
     <div class="outer-row-2"><!-- Flex -->
         <div class="outer-col-1">
-            <img src="./cat.jpg" alt="">
+            <img src="./image/cat.jpg" alt="">
         </div>
         <div class="outer-col-2">
             <div class="inner-row-1">
@@ -2338,7 +2338,7 @@ p{
     </div>
     <div class="outer-row-2"><!-- Flex -->
         <div class="outer-col-1">
-            <img src="./cat.jpg" alt="">
+            <img src="./image/cat.jpg" alt="">
         </div>
         <div class="outer-col-2">
             <div class="inner-row-1">
@@ -2359,7 +2359,7 @@ p{
     </div>
     <div class="outer-row-2"><!-- Flex -->
         <div class="outer-col-1">
-            <img src="./dog.jpg" alt="">
+            <img src="./image/dog.jpg" alt="">
         </div>
         <div class="outer-col-2">
             <div class="inner-row-1">
@@ -2380,7 +2380,7 @@ p{
     </div>
     <div class="outer-row-2"><!-- Flex -->
         <div class="outer-col-1">
-            <img src="./cat.jpg" alt="">
+            <img src="./image/cat.jpg" alt="">
         </div>
         <div class="outer-col-2">
             <div class="inner-row-1">
@@ -2401,9 +2401,9 @@ p{
     </div>
 </div>
 ```
-![alt text](image-31.png)
+![alt text](./image/image-31.png)
 * 13f
-![alt text](image-32.png)
+![alt text](./image/image-32.png)
 * 13g
 ```html
 <style>
@@ -2455,7 +2455,7 @@ p{
 </style>
 <div class="container"> <!--Flex-->
     <div class="outer-col-1">
-        <img class="image" src="./cat.jpg" alt="">
+        <img class="image" src="./image/cat.jpg" alt="">
     </div>
     <div class="outer-col-2">
         <div class="outer-row-1">supersimple.dev <span class="tag">&#64;SuperSimpleDev</span></div>
@@ -2475,7 +2475,7 @@ p{
 * position : fixed; -> make the element get out from the position and it doesn't take space and we can stretch the size by using top,left,right,bottom
 * If we want to resize the element based on the page , we can use top,left,right,bottom
 * If we want fixed length , then we use width and height
-![alt text](image-33.png)
+![alt text](./image/image-33.png)
 * 14a
 ```html
 <style>
@@ -2544,7 +2544,7 @@ p{
     </div>
 </div>
 ```
-![alt text](image-34.png)
+![alt text](./image/image-34.png)
 * 14d
 ```html
 <style>
@@ -2615,7 +2615,7 @@ p{
     
 </div>
 ```
-![alt text](image-35.png)
+![alt text](./image/image-35.png)
 * 14e
 ```html
 <style>
@@ -2656,7 +2656,7 @@ p{
 <div class="body">
     <div class="container">
         <div class="left">
-            <img class="cat-image" src="./cat.jpg" alt="cat-image">
+            <img class="cat-image" src="./image/cat.jpg" alt="cat-image">
             <p class="name">Oliver Cat</p>
         </div>
         <div class="right">
@@ -2718,9 +2718,9 @@ p{
 </style>
 <div class="body">
     <div class="sidebar-1">
-        <img src="./cat.jpg" alt="">
-        <img src="./cat2.jpg" alt="">
-        <img src="./dog.jpg" alt="">
+        <img src="./image/cat.jpg" alt="">
+        <img src="./image/cat2.jpg" alt="">
+        <img src="./image/dog.jpg" alt="">
     </div>
     <div class="sidebar-2">
         <div class="info-box">
@@ -2739,7 +2739,7 @@ p{
 * Generally code written below will appear top of the other element
 * To get aware from that problem we use z-index:0px; (default) . The more value we have , if will come front
 ### Exercise
-![alt text](image-36.png)
+![alt text](./image/image-36.png)
 * 15a
 ```html
 <style>
@@ -2795,7 +2795,7 @@ p{
     <div class="close"></div>
 </div>
 ```
-![alt text](image-37.png)
+![alt text](./image/image-37.png)
 * 15c
 ```html
 <style>
@@ -2874,7 +2874,7 @@ p{
     </div>
 </div>
 ```
-![alt text](image-38.png)
+![alt text](./image/image-38.png)
 * 15e
 ```html
 <style>
@@ -2900,7 +2900,7 @@ p{
     }
 </style>
 <div class="container">
-    <img src="./shirt.jpg" alt="" class="image">
+    <img src="./image/shirt.jpg" alt="" class="image">
     <div class="promotion">20% OFF</div>
 </div>
 ```
@@ -2944,7 +2944,7 @@ p{
     }
 </style>
 <div class="container">
-    <img src="./shirt.jpg" alt="" class="image">
+    <img src="./image/shirt.jpg" alt="" class="image">
     <div class="promotion">20% OFF</div>
     <div class="cart-block">
         <button>Add to Cart</button>
@@ -2958,17 +2958,17 @@ p{
     * justify-content -> vertical direction
 ### Exercise
 
-![alt text](image-39.png)
+![alt text](./image/image-39.png)
 <br>
 
 <video width="320" height="240" controls>
-  <source src="./16-2.mp4" type="video/mp4">
+  <source src="./video/16-2.mp4" type="video/mp4">
 </video>
 
 ## More CSS
 * Inheritance mostly works with the text styles
 * semantic tag - Give special meaning to the screen reader
 ### Exercise
-![alt text](image-40.png)
-![alt text](image-41.png)
-![alt text](image-42.png)
+![alt text](./image/image-40.png)
+![alt text](./image/image-41.png)
+![alt text](./image/image-42.png)
