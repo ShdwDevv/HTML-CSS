@@ -24,7 +24,7 @@ p{
     right:0;
     left:0;
     border-bottom: 1px solid rgb(220, 220, 220);
-    z-index: 5px; /*We make our thumbnail as relative and it is below header so the image will overflow the header , So we are doing this*/
+    z-index: 5; /*We make our thumbnail as relative and it is below header so the image will overflow the header , So we are doing this*/
 }
 .left-section{
     display: flex;
